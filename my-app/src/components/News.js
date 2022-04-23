@@ -1,44 +1,46 @@
 function News() {
   return (
-    <li className="News-post">
-      <div className="newsContainer">
-        <div className="votearrow upvote">
-          <i class="fa-solid fa-sort-up"></i>
-        </div>
-        <div className="newsBlock">
-          <a href="#">
-            <h2>
-              {" "}
-              News about news
-              <a href="#">
-                <span className="datarow">
-                  (filtering news from the same source)
-                </span>
-              </a>
-            </h2>
-          </a>
+    // <li className="News-post">
 
-          <br />
-          <p className="datarow">
-            100 points by
+    <div className="newsContainer">
+      <div className="index">1. </div>
+      <div className="votearrow upvote">
+        <i class="fa-solid fa-sort-up"></i>
+      </div>
+      <div className="newsBlock">
+        <a href="#">
+          <p>
+            {" "}
+            News about news
             <a href="#">
-              <span className="datarow"> userid </span>
-            </a>
-            <a href="#">
-              <span className="datarow">posted </span>
-            </a>{" "}
-            |
-            <a href="#">
-              <span className="datarow"> hide </span>
-            </a>{" "}
-            |
-            <a href="#">
-              <span className="datarow">comments</span>
+              <span className="datarow">
+                (filtering news from the same source)
+              </span>
             </a>
           </p>
-        </div>
+        </a>
+
+        <br />
+        <p className="datarow">
+          100 points by
+          <a href="#">
+            <span className="datarow"> userid </span>
+          </a>
+          <a href="#">
+            <span className="datarow">posted </span>
+          </a>{" "}
+          |
+          <a href="#">
+            <span className="datarow"> hide </span>
+          </a>{" "}
+          |
+          <a href="#">
+            <span className="datarow">comments</span>
+          </a>
+        </p>
       </div>
-    </li>
+    </div>
+    // </li>
   );
 }
 

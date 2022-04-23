@@ -4,20 +4,21 @@ function Footer() {
       <ul className="Footer-list">
         <li>Applications are open for YC Summer 2022</li>
         <li className="Footer-links">
-          <li>Guidelines</li>
+          <a href="#">Guidelines</a>
           <li>|</li>
-          <li>FAQ</li>
+          <a href="#">FAQ</a>
           <li>|</li>
-          <li>Lists</li>
-          <li>API</li>
+          <a href="#">Lists</a>
           <li>|</li>
-          <li>Security</li>
+          <a href="#">API</a>
           <li>|</li>
-          <li>Legal</li>
+          <a href="#">Security</a>
           <li>|</li>
-          <li>Apply to YC</li>
+          <a href="#">Legal</a>
           <li>|</li>
-          <li>Contact</li>
+          <a href="#">Apply to YC</a>
+          <li>|</li>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </footer>

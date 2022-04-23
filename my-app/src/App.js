@@ -8,9 +8,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ol className="News-list">
+      <div className="News-list">
         <News />
-      </ol>
+        <News />
+        <News />
+      </div>
       <Footer />
     </div>
   );
