@@ -1,0 +1,110 @@
+* {
+    max-width: 900px;
+    margin: 0em auto;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+ol {
+    margin: 10px;
+}
+
+li {
+    margin: 10px 0;
+    width: 600px;
+}
+
+.newsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    line-height: 0.5;
+}
+
+.App {
+    text-align: left;
+    background-color: #f7f7ef;
+}
+
+.Hacker-news {
+    font-weight: bold;
+}
+
+.logo {
+    width: 20px;
+    border: 1px solid white;
+    margin: .3em auto;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6600;
+    list-style-type: none;
+    align-items: center;
+    padding: 0 4em;
+    margin-top: 2em;
+}
+
+.News-post {
+    padding: 2em;
+    text-align: left;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #828282;
+}
+
+.votearrow {
+    width: 100px;
+    height: 10px;
+    border: 0px;
+    margin: 3px 2px 6px;
+    color: #828282;
+    /* background: url("https://news.ycombinator.com/grayarrow.gif") no-repeat; */
+}
+
+.datarow {
+    color: #828282;
+    font-size: 9px;
+}
+
+.newsBlock {
+    width: 95%;
+}
+
+.upvote {
+    width: 5%;
+    margin: 0;
+    padding: 0;
+}
+
+.App-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7ef;
+    list-style-type: none;
+    margin-top: 2em;
+    height: 30px;
+    border-top: 2px solid #ff6600;
+}
+
+.Footer-list {
+    font-size: .8rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.Footer-links {
+    display: flex;
+    font-size: .8rem;
+    list-style-type: none;
+    text-align: center;
+}
