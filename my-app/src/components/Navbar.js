@@ -6,22 +6,43 @@ function Navbar() {
       <div className="App-header">
         <div className="logoBlock">
           <img className="logo" src={hackernews} alt="logo" />
-          <h2 className="Hacker-news">Hacker News</h2>
+          <a className="Hacker-news">Hacker News</a>
         </div>
-        <ul className="Navbar">
-          {/* <img className="logo" src={hackernews} alt="logo" />
+        <div className="navLinsBlock">
+          <ul className="Navbar">
+            {/* <img className="logo" src={hackernews} alt="logo" />
           <li className="Hacker-news">Hacker News</li> */}
-          <li>News</li>
-          <li>Past</li>
-          <li>Commnents</li>
-          <li>Ask</li>
-          <li>Show</li>
-          <li>Jobs</li>
-          <li>Submit</li>
-        </ul>
+            <li>
+              <a>news</a>
+            </li>
+            <li> | </li>
+            <li>
+              <a>past </a>
+            </li>
+            <li> | </li>
+            <li>
+              <a>commnents </a>
+            </li>
+            <li> | </li>
+            <li>
+              <a>ask </a>
+            </li>
+            <li> | </li>
+            <li>
+              <a>show </a>
+            </li>
+            <li> | </li>
+            <li>
+              <a>jobs </a>
+            </li>
+            <li> | </li>
+            <li>
+              <a>submit</a>{" "}
+            </li>
+          </ul>
+          <p className="loginLink">login</p>
+        </div>
       </div>
-
-      <p>Login</p>
     </header>
   );
 }

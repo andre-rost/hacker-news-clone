@@ -1,141 +1,162 @@
 * {
-    max-width: 900px;
-    margin: 0em auto;
-    box-sizing: border-box;
+  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
 }
-
+body {
+  width: 90%;
+  margin: 0 auto;
+}
 a {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 p {
-    font-size: 14px;
+  font-size: 12px;
 }
 
 header {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    background-color: #ff6600;
+  background-color: #ff6600;
+  margin: 8px 0;
 }
 
 .App-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  height: 22px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-
-/* 
-ol {
-    margin: 10px;
-} */
-
-
-/* 
 li {
-    margin: 10px 0;
-    width: 600px;
-} */
+  display: flex;
+  font-size: 12px;
+  list-style-type: none;
+  text-indent: 8px;
+}
+
+form {
+  font-size: 12px;
+  color: #828282;
+}
 
 .logoBlock {
-    display: flex;
-    flex-direction: inline-block;
+  display: flex;
+}
+
+.navLinsBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-left: 0px;
+}
+
+.loginLink {
+  font-size: 12px;
+  margin: 3px;
 }
 
 .newsContainer {
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-    line-height: 0.5;
-    margin: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  line-height: 0.5;
+  margin: 10px;
 }
 
 .index {
-    margin: 3px
+  margin: 3px;
+  color: #828282;
+  font-size: 14px;
 }
 
 .App {
-    text-align: left;
-    background-color: #f7f7ef;
+  text-align: left;
+  background-color: #f7f7ef;
 }
 
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 0 4em;
-    margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
 }
 
 .logo {
-    width: 14px;
-    height: 14px;
-    border: 1px solid white;
-    margin: auto 3px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  margin: auto 3px;
 }
 
 .Hacker-news {
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 3px 0 0 2px;
 }
 
 .News-post {
-    padding: 2em;
-    text-align: left;
-    font-family: Verdana, Geneva, sans-serif;
-    color: #828282;
+  padding: 2em;
+  text-align: left;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #828282;
 }
 
 .votearrow {
-    width: 100px;
-    height: 10px;
-    border: 0px;
-    margin: 3px 2px 6px;
-    color: #828282;
-    /* background: url("https://news.ycombinator.com/grayarrow.gif") no-repeat; */
+  width: 100px;
+  height: 10px;
+  border: 0px;
+  margin: 3px 2px 6px;
+  color: #828282;
+}
+
+.newsSource {
+  margin-left: 3px;
 }
 
 .datarow {
-    color: #828282;
-    font-size: 9px;
+  color: #828282;
+  font-size: 9px;
 }
 
 .newsBlock {
-    width: 95%;
+  width: 95%;
 }
 
 .upvote {
-    width: 5%;
-    margin: 0;
-    padding: 0;
-    vertical-align: center
+  width: 2%;
 }
 
 .App-footer {
-    display: flex;
-    background-color: #f7f7ef;
-    list-style-type: none;
-    margin-top: 2em;
-    height: 80px;
-    border-top: 2px solid #ff6600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7ef;
+  list-style-type: none;
+  margin-top: 2em;
+  height: 80px;
+  border-top: 2px solid #ff6600;
 }
 
 .Footer-list {
-    font-size: .9rem;
-    list-style-type: none;
-    text-align: center;
-    justify-content: space-around;
-    margin-top: 1em;
+  /* font-size: 6px; */
+  list-style-type: none;
+  text-align: center;
+  justify-content: space-around;
+  /* margin-top: 1em; */
+}
+.footerNotice {
+  margin-top: 16px;
 }
 
 .Footer-links {
-    display: flex;
-    font-size: .8rem;
-    list-style-type: none;
-    text-indent: 10px;
-    margin-top: 1em;
+  display: flex;
+  font-size: 9px;
+  list-style-type: none;
+  text-indent: 10px;
+  margin-top: 1em;
 }

@@ -1,8 +1,8 @@
 function Footer() {
   return (
     <footer className="App-footer">
+      <p className="footerNotice">Applications are open for YC Summer 2022</p>
       <ul className="Footer-list">
-        <li>Applications are open for YC Summer 2022</li>
         <li className="Footer-links">
           <a href="#">Guidelines</a>
           <li>|</li>
@@ -21,6 +21,19 @@ function Footer() {
           <a href="#">Contact</a>
         </li>
       </ul>
+      <form method="get" action="//hn.algolia.com/">
+        Search:
+        <input
+          type="text"
+          name="q"
+          value=""
+          size="17"
+          autocorrect="off"
+          spellcheck="false"
+          autocapitalize="none"
+          autocomplete="false"
+        />
+      </form>
     </footer>
   );
 }

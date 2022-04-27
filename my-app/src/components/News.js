@@ -13,7 +13,7 @@ function News() {
             {" "}
             News about news
             <a href="#">
-              <span className="datarow">
+              <span className="datarow  newsSource">
                 (filtering news from the same source)
               </span>
             </a>
