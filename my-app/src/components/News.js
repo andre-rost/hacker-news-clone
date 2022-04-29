@@ -1,44 +1,45 @@
-function News() {
+function News({ newsPost, index }) {
+  console.log(newsPost);
   return (
-    <li className="News-post">
-      <div className="newsContainer">
-        <div className="votearrow upvote">
-          <i class="fa-solid fa-sort-up"></i>
-        </div>
-        <div className="newsBlock">
-          <a href="#">
-            <h2>
-              {" "}
-              News about news
-              <a href="#">
-                <span className="datarow">
-                  (filtering news from the same source)
-                </span>
-              </a>
-            </h2>
-          </a>
+    // <li className="News-post">
 
-          <br />
-          <p className="datarow">
-            100 points by
+    <div className="newsContainer">
+      <div className="index">{index + 1} </div>
+      <div className="votearrow upvote">
+        <i class="fa-solid fa-sort-up"></i>
+      </div>
+      <div className="newsBlock">
+        <a href="#">
+          <p>
+            {" "}
+            {newsPost.title}
             <a href="#">
-              <span className="datarow"> userid </span>
-            </a>
-            <a href="#">
-              <span className="datarow">posted </span>
-            </a>{" "}
-            |
-            <a href="#">
-              <span className="datarow"> hide </span>
-            </a>{" "}
-            |
-            <a href="#">
-              <span className="datarow">comments</span>
+              <span className="datarow  newsSource">({newsPost.url})</span>
             </a>
           </p>
-        </div>
+        </a>
+
+        <br />
+        <p className="datarow">
+          {newsPost.points} points by
+          <a href="#">
+            <span className="datarow"> {newsPost.author.value} </span>
+          </a>
+          <a href="#">
+            <span className="datarow">{newsPost.created_at} </span>
+          </a>{" "}
+          |
+          <a href="#">
+            <span className="datarow"> hide </span>
+          </a>{" "}
+          |
+          <a href="#">
+            <span className="datarow">{newsPost.num_comments} comments</span>
+          </a>
+        </p>
       </div>
-    </li>
+    </div>
+    // </li>
   );
 }
 
