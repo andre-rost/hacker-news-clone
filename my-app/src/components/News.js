@@ -1,9 +1,10 @@
-function News() {
+function News({ newsPost, index }) {
+  console.log(newsPost);
   return (
     // <li className="News-post">
 
     <div className="newsContainer">
-      <div className="index">1. </div>
+      <div className="index">{index + 1} </div>
       <div className="votearrow upvote">
         <i class="fa-solid fa-sort-up"></i>
       </div>
@@ -11,23 +12,21 @@ function News() {
         <a href="#">
           <p>
             {" "}
-            News about news
+            {newsPost.title}
             <a href="#">
-              <span className="datarow  newsSource">
-                (filtering news from the same source)
-              </span>
+              <span className="datarow  newsSource">({newsPost.url})</span>
             </a>
           </p>
         </a>
 
         <br />
         <p className="datarow">
-          100 points by
+          {newsPost.points} points by
           <a href="#">
-            <span className="datarow"> userid </span>
+            <span className="datarow"> {newsPost.author.value} </span>
           </a>
           <a href="#">
-            <span className="datarow">posted </span>
+            <span className="datarow">{newsPost.created_at} </span>
           </a>{" "}
           |
           <a href="#">
@@ -35,7 +34,7 @@ function News() {
           </a>{" "}
           |
           <a href="#">
-            <span className="datarow">comments</span>
+            <span className="datarow">{newsPost.num_comments} comments</span>
           </a>
         </p>
       </div>
