@@ -10,34 +10,32 @@ function Navbar() {
         </div>
         <div className="navLinsBlock">
           <ul className="Navbar">
-            {/* <img className="logo" src={hackernews} alt="logo" />
-          <li className="Hacker-news">Hacker News</li> */}
             <li>
-              <a>news</a>
+              <a href="#">new</a>
             </li>
             <li> | </li>
             <li>
-              <a>past </a>
+              <a href="#">past </a>
             </li>
             <li> | </li>
             <li>
-              <a>commnents </a>
+              <a href="#">comments </a>
             </li>
             <li> | </li>
             <li>
-              <a>ask </a>
+              <a href="#">ask </a>
             </li>
             <li> | </li>
             <li>
-              <a>show </a>
+              <a href="#">show </a>
             </li>
             <li> | </li>
             <li>
-              <a>jobs </a>
+              <a href="#">jobs </a>
             </li>
             <li> | </li>
             <li>
-              <a>submit</a>{" "}
+              <a href="#">submit</a>
             </li>
           </ul>
           <p className="loginLink">login</p>
