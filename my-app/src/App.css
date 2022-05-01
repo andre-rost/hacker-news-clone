@@ -176,3 +176,14 @@ form {
 .Form {
     padding: 1em;
 }
+
+.loader {
+    position: fixed;
+    top: 20%;
+    left: calc(50% - 35px);
+}
+
+
+/* .body {
+    display: none;
+} */
