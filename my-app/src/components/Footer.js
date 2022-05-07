@@ -1,37 +1,54 @@
-function Footer() {
+function Footer({ handleSearch, searchTerm, onChange }) {
   return (
-    <footer className="App-footer">
+    <footer className="AppFooter">
       <p className="footerNotice">Applications are open for YC Summer 2022</p>
-      <ul className="Footer-list">
-        <li className="Footer-links">
+      <ul className="FooterList">
+        <li>
           <a href="#">Guidelines</a>
-          <li>|</li>
+        </li>
+
+        <li>|</li>
+        <li>
           <a href="#">FAQ</a>
-          <li>|</li>
+        </li>
+        <li>|</li>
+        <li>
           <a href="#">Lists</a>
-          <li>|</li>
+        </li>
+
+        <li>|</li>
+        <li>
           <a href="#">API</a>
-          <li>|</li>
+        </li>
+
+        <li>|</li>
+        <li>
           <a href="#">Security</a>
-          <li>|</li>
+        </li>
+
+        <li>|</li>
+        <li>
           <a href="#">Legal</a>
-          <li>|</li>
+        </li>
+
+        <li>|</li>
+        <li>
           <a href="#">Apply to YC</a>
-          <li>|</li>
+        </li>
+
+        <li>|</li>
+        <li>
           <a href="#">Contact</a>
         </li>
       </ul>
-      <form method="get" action="//hn.algolia.com/">
+      <form className="Form" onSubmit={handleSearch}>
         Search:
         <input
           type="text"
-          name="q"
-          value=""
+          placeholder="Search"
+          value={searchTerm}
           size="17"
-          autocorrect="off"
-          spellcheck="false"
-          autocapitalize="none"
-          autocomplete="false"
+          onChange={onChange}
         />
       </form>
     </footer>
